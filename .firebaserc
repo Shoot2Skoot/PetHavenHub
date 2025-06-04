@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "pethavenhub-dev"
+  },
+  "targets": {
+    "pet-haven-hub-dev": {
+      "hosting": {
+        "web": [
+          "pet-haven-hub-demo"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

@@ -1,0 +1,334 @@
+[debug] [2025-06-04T04:57:11.129Z] ----------------------------------------------------------------------
+[debug] [2025-06-04T04:57:11.130Z] Command:       C:\nvm4w\nodejs\node.exe C:\nvm4w\nodejs\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --import=.data --export-on-exit --project pet-haven-hub-dev
+[debug] [2025-06-04T04:57:11.131Z] CLI Version:   14.5.1
+[debug] [2025-06-04T04:57:11.131Z] Platform:      win32
+[debug] [2025-06-04T04:57:11.131Z] Node Version:  v20.19.2
+[debug] [2025-06-04T04:57:11.131Z] Time:          Tue Jun 03 2025 23:57:11 GMT-0500 (Central Daylight Time)
+[debug] [2025-06-04T04:57:11.131Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-04T04:57:11.279Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-04T04:57:11.279Z] > authorizing via signed-in user (pendzich.cody@gmail.com)
+[debug] [2025-06-04T04:57:11.320Z] openjdk version "21.0.7" 2025-04-15 LTS
+
+[debug] [2025-06-04T04:57:11.321Z] OpenJDK Runtime Environment Temurin-21.0.7+6 (build 21.0.7+6-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.7+6 (build 21.0.7+6-LTS, mixed mode, sharing)
+
+[debug] [2025-06-04T04:57:11.341Z] Parsed Java major version: 21
+[info] i  emulators: Starting emulators: auth, functions, firestore, hosting, storage, extensions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, hosting, storage, extensions"}}
+[debug] [2025-06-04T04:57:11.343Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:11.343Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:11.343Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/pet-haven-hub-dev/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-06-04T04:57:11.343Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/pet-haven-hub-dev/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/pet-haven-hub-dev
+[debug] [2025-06-04T04:57:11.603Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/pet-haven-hub-dev/services/cloudresourcemanager.googleapis.com 403
+[debug] [2025-06-04T04:57:11.603Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/pet-haven-hub-dev/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-06-04T04:57:11.603Z] Unable to check that https://cloudresourcemanager.googleapis.com is enabled on pet-haven-hub-dev. Calls to it will fail if it is not enabled
+[debug] [2025-06-04T04:57:11.603Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:11.603Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:11.604Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/pet-haven-hub-dev [none]
+[debug] [2025-06-04T04:57:11.907Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/pet-haven-hub-dev 403
+[debug] [2025-06-04T04:57:11.907Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/pet-haven-hub-dev {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[error] !!  extensions: Unable to look up project number for pet-haven-hub-dev.
+ If this is a real project, ensure that you are logged in and have access to it.
+ If this is a fake project, please use a project ID starting with 'demo-' to skip production calls.
+ Continuing with a fake project number - secrets and other features that require production access may behave unexpectedly. {"metadata":{"emulator":{"name":"extensions"},"message":"Unable to look up project number for pet-haven-hub-dev.\n If this is a real project, ensure that you are logged in and have access to it.\n If this is a fake project, please use a project ID starting with 'demo-' to skip production calls.\n Continuing with a fake project number - secrets and other features that require production access may behave unexpectedly."}}
+[debug] [2025-06-04T04:57:11.917Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-04T04:57:11.917Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-04T04:57:11.917Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-04T04:57:11.917Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-04T04:57:11.917Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-04T04:57:11.918Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-04T04:57:11.918Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":9090}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9152}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-06-04T04:57:11.921Z] [hub] writing locator at C:\Users\pendz\AppData\Local\Temp\hub-pet-haven-hub-dev.json
+[debug] [2025-06-04T04:57:11.926Z] [Extensions] Started Extensions emulator, this is a noop.
+[debug] [2025-06-04T04:57:11.930Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-04T04:57:11.930Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-04T04:57:11.930Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-06-04T04:57:11.930Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":9090}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9152}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: apphosting, database, pubsub, dataconnect {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mapphosting, database, pubsub, dataconnect\u001b[22m"}}
+[debug] [2025-06-04T04:57:11.948Z] defaultcredentials: writing to file C:\Users\pendz\AppData\Roaming\firebase\pendzich_cody_gmail.com_application_default_credentials.json
+[debug] [2025-06-04T04:57:11.949Z] Setting GAC to C:\Users\pendz\AppData\Roaming\firebase\pendzich_cody_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\pendz\\AppData\\Roaming\\firebase\\pendzich_cody_gmail.com_application_default_credentials.json"}}
+[debug] [2025-06-04T04:57:11.949Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:11.949Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:11.949Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev/adminSdkConfig [none]
+[debug] [2025-06-04T04:57:12.207Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev/adminSdkConfig 403
+[debug] [2025-06-04T04:57:12.207Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev/adminSdkConfig {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-06-04T04:57:12.207Z] Failed to get Admin SDK config for pet-haven-hub-dev, falling back to cache Failed to get Admin SDK for Firebase project pet-haven-hub-dev. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project pet-haven-hub-dev. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}},"response":{"statusCode":403}},"exit":1,"message":"Request to https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev/adminSdkConfig had HTTP Error: 403, The caller does not have permission","status":403},"status":500}
+[warn] !  functions: Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect. {"metadata":{"emulator":{"name":"functions"},"message":"Unable to fetch project Admin SDK configuration, Admin SDK behavior in Cloud Functions emulator may be incorrect."}}
+[debug] [2025-06-04T04:57:12.215Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2025-06-04T04:57:12.215Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2025-06-04T04:57:12.215Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\pendz\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.19.8.jar","--host","127.0.0.1","--port",9090,"--websocket_port",9152,"--project_id","pet-haven-hub-dev","--rules","C:\\Coding\\ai-agents\\pethavenhub\\firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false,"shell":false,"port":9090} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\pendz\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.19.8.jar\",\"--host\",\"127.0.0.1\",\"--port\",9090,\"--websocket_port\",9152,\"--project_id\",\"pet-haven-hub-dev\",\"--rules\",\"C:\\\\Coding\\\\ai-agents\\\\pethavenhub\\\\firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false,\"shell\":false,\"port\":9090}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2025-06-04T04:57:13.186Z] Jun 03, 2025 11:57:13 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9152
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 03, 2025 11:57:13 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\r\nINFO: Started WebSocket server on ws://127.0.0.1:9152\r\n"}}
+[debug] [2025-06-04T04:57:13.241Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2025-06-04T04:57:13.241Z] 127.0.0.1:9090
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:9090
+
+If you are running a Firestore in Datastore Mode project, run:
+
+   export DATASTORE_EMULATOR_HOST=127.0.0.1:9090
+
+Note: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:9090\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\r\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:9090\n\nIf you are running a Firestore in Datastore Mode project, run:\r\n\n   export DATASTORE_EMULATOR_HOST=127.0.0.1:9090\n\nNote: Support for Datastore Mode is in preview. If you encounter any bugs please file at https://github.com/firebase/firebase-tools/issues.\r\nDev App Server is now running.\n\r\n"}}
+[info] +  firestore: Firestore Emulator UI websocket is running on 9152. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9152."}}
+[debug] [2025-06-04T04:57:18.019Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2025-06-04T04:57:18.684Z] Temp file directory for storage emulator: C:\Users\pendz\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\pendz\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[debug] [2025-06-04T04:57:18.687Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:18.687Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:18.687Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/pet-haven-hub-dev/sites 
+[debug] [2025-06-04T04:57:18.905Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/pet-haven-hub-dev/sites 404
+[debug] [2025-06-04T04:57:18.905Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/pet-haven-hub-dev/sites {"error":{"code":404,"message":"project `pet-haven-hub-dev` doesn't exist","status":"NOT_FOUND"}}
+[debug] [2025-06-04T04:57:18.906Z] Failed to list hosting sites
+[debug] Request to https://firebasehosting.googleapis.com/v1beta1/projects/pet-haven-hub-dev/sites had HTTP Error: 404, project `pet-haven-hub-dev` doesn't exist
+[debug] [2025-06-04T04:57:18.906Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:18.906Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:18.906Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev/webApps/-/config [none]
+[debug] [2025-06-04T04:57:19.206Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev/webApps/-/config 403
+[debug] [2025-06-04T04:57:19.206Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev/webApps/-/config {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-06-04T04:57:19.206Z] fetchWebSetup error: FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev/webApps/-/config had HTTP Error: 403, The caller does not have permission
+[warn] !  hosting: Authentication error when trying to fetch your current web app configuration, have you run firebase login? 
+[warn] !  hosting: Could not fetch web app configuration and there is no cached configuration on this machine. Check your internet connection and make sure you are authenticated. To continue, you must call firebase.initializeApp({...}) in your code before using Firebase. 
+[debug] [2025-06-04T04:57:19.218Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:19.219Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:19.219Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev [none]
+[debug] [2025-06-04T04:57:19.408Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev 403
+[debug] [2025-06-04T04:57:19.408Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-06-04T04:57:19.408Z] Request to https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev had HTTP Error: 403, The caller does not have permission
+[info] i  hosting[pet-haven-hub-dev]: Serving hosting files from: packages/web/out {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpackages/web/out\u001b[22m"}}
+[info] +  hosting[pet-haven-hub-dev]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[info] i  ui: downloading ui-v1.15.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.15.0.zip..."}}
+[debug] [2025-06-04T04:57:19.473Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 
+[debug] [2025-06-04T04:57:19.648Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip 200
+[debug] [2025-06-04T04:57:19.648Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.15.0.zip [stream]
+[debug] [2025-06-04T04:57:19.885Z] Data is 3538469
+[debug] [2025-06-04T04:57:19.885Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-06-04T04:57:19.885Z] [unzip] Processing entry: client\
+[debug] [2025-06-04T04:57:19.885Z] [unzip] mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\
+[debug] [2025-06-04T04:57:19.886Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2025-06-04T04:57:19.886Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2025-06-04T04:57:19.886Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-04T04:57:19.886Z] [unzip] Writing file: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\favicon-16x16.png
+[debug] [2025-06-04T04:57:19.887Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2025-06-04T04:57:19.887Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2025-06-04T04:57:19.887Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-04T04:57:19.887Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\safari-pinned-tab.svg
+[debug] [2025-06-04T04:57:19.889Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2025-06-04T04:57:19.889Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2025-06-04T04:57:19.889Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-04T04:57:19.889Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\favicon.ico
+[debug] [2025-06-04T04:57:19.890Z] [unzip] Entry: client/index.html (compressed_size=1364 bytes, uncompressed_size=3071 bytes)
+[debug] [2025-06-04T04:57:19.890Z] [unzip] Processing entry: client\index.html
+[debug] [2025-06-04T04:57:19.890Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-04T04:57:19.890Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\index.html
+[debug] [2025-06-04T04:57:19.900Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2025-06-04T04:57:19.900Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2025-06-04T04:57:19.900Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-04T04:57:19.900Z] [unzip] Writing file: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-192x192.png
+[debug] [2025-06-04T04:57:19.900Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2025-06-04T04:57:19.900Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2025-06-04T04:57:19.900Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-04T04:57:19.901Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\apple-touch-icon.png
+[debug] [2025-06-04T04:57:19.901Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2025-06-04T04:57:19.901Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2025-06-04T04:57:19.901Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-04T04:57:19.902Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\android-chrome-512x512.png
+[debug] [2025-06-04T04:57:19.902Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2025-06-04T04:57:19.902Z] [unzip] Processing entry: client\manifest.json
+[debug] [2025-06-04T04:57:19.902Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-04T04:57:19.902Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\manifest.json
+[debug] [2025-06-04T04:57:19.903Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2025-06-04T04:57:19.903Z] [unzip] Processing entry: client\robots.txt
+[debug] [2025-06-04T04:57:19.904Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-04T04:57:19.904Z] [unzip] Writing file: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\robots.txt
+[debug] [2025-06-04T04:57:19.905Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2025-06-04T04:57:19.905Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2025-06-04T04:57:19.905Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-04T04:57:19.905Z] [unzip] Writing file: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\mstile-150x150.png
+[debug] [2025-06-04T04:57:19.906Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-06-04T04:57:19.907Z] [unzip] Processing entry: client\assets\
+[debug] [2025-06-04T04:57:19.907Z] [unzip] mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\
+[debug] [2025-06-04T04:57:19.907Z] [unzip] Entry: client/assets/index-BX-A56oj.js (compressed_size=582089 bytes, uncompressed_size=2092775 bytes)
+[debug] [2025-06-04T04:57:19.908Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js
+[debug] [2025-06-04T04:57:19.908Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2025-06-04T04:57:19.909Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js
+[debug] [2025-06-04T04:57:19.940Z] [unzip] Entry: client/assets/index-CjB9C900.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2025-06-04T04:57:19.940Z] [unzip] Processing entry: client\assets\index-CjB9C900.css
+[debug] [2025-06-04T04:57:19.940Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2025-06-04T04:57:19.941Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-CjB9C900.css
+[debug] [2025-06-04T04:57:19.944Z] [unzip] Entry: client/assets/index-BX-A56oj.js.map (compressed_size=2362482 bytes, uncompressed_size=10036679 bytes)
+[debug] [2025-06-04T04:57:19.944Z] [unzip] Processing entry: client\assets\index-BX-A56oj.js.map
+[debug] [2025-06-04T04:57:19.944Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets
+[debug] [2025-06-04T04:57:19.944Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\index-BX-A56oj.js.map
+[debug] [2025-06-04T04:57:20.003Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-06-04T04:57:20.003Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2025-06-04T04:57:20.003Z] [unzip] mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\
+[debug] [2025-06-04T04:57:20.003Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2025-06-04T04:57:20.003Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2025-06-04T04:57:20.003Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions
+[debug] [2025-06-04T04:57:20.004Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\extensions\default-extension.png
+[debug] [2025-06-04T04:57:20.004Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-06-04T04:57:20.004Z] [unzip] Processing entry: client\assets\img\
+[debug] [2025-06-04T04:57:20.004Z] [unzip] mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\
+[debug] [2025-06-04T04:57:20.004Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2025-06-04T04:57:20.004Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2025-06-04T04:57:20.005Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\img
+[debug] [2025-06-04T04:57:20.005Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\img\database.png
+[debug] [2025-06-04T04:57:20.005Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-06-04T04:57:20.005Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2025-06-04T04:57:20.005Z] [unzip] mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\
+[debug] [2025-06-04T04:57:20.006Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2025-06-04T04:57:20.006Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2025-06-04T04:57:20.006Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.006Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2025-06-04T04:57:20.006Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2025-06-04T04:57:20.006Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2025-06-04T04:57:20.006Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.006Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2025-06-04T04:57:20.007Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2025-06-04T04:57:20.007Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2025-06-04T04:57:20.007Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.007Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2025-06-04T04:57:20.008Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2025-06-04T04:57:20.008Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2025-06-04T04:57:20.008Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.008Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2025-06-04T04:57:20.008Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2025-06-04T04:57:20.009Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2025-06-04T04:57:20.009Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.009Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2025-06-04T04:57:20.009Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2025-06-04T04:57:20.009Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2025-06-04T04:57:20.009Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.009Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2025-06-04T04:57:20.010Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2025-06-04T04:57:20.010Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2025-06-04T04:57:20.010Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.010Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2025-06-04T04:57:20.011Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2025-06-04T04:57:20.011Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2025-06-04T04:57:20.011Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.012Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2025-06-04T04:57:20.015Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2025-06-04T04:57:20.015Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2025-06-04T04:57:20.015Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.016Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2025-06-04T04:57:20.017Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2025-06-04T04:57:20.018Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2025-06-04T04:57:20.018Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.018Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2025-06-04T04:57:20.020Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2025-06-04T04:57:20.020Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2025-06-04T04:57:20.020Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.020Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2025-06-04T04:57:20.022Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2025-06-04T04:57:20.022Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2025-06-04T04:57:20.022Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.023Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2025-06-04T04:57:20.024Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2025-06-04T04:57:20.024Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2025-06-04T04:57:20.024Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons
+[debug] [2025-06-04T04:57:20.025Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2025-06-04T04:57:20.028Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2025-06-04T04:57:20.028Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2025-06-04T04:57:20.028Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-04T04:57:20.029Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\browserconfig.xml
+[debug] [2025-06-04T04:57:20.031Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2025-06-04T04:57:20.031Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2025-06-04T04:57:20.031Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client
+[debug] [2025-06-04T04:57:20.031Z] [unzip] Writing file: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\client\favicon-32x32.png
+[debug] [2025-06-04T04:57:20.032Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-06-04T04:57:20.032Z] [unzip] Processing entry: server\
+[debug] [2025-06-04T04:57:20.032Z] [unzip] mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\server\
+[debug] [2025-06-04T04:57:20.032Z] [unzip] Entry: server/server.mjs.map (compressed_size=217845 bytes, uncompressed_size=944978 bytes)
+[debug] [2025-06-04T04:57:20.032Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2025-06-04T04:57:20.033Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\server
+[debug] [2025-06-04T04:57:20.033Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs.map
+[debug] [2025-06-04T04:57:20.045Z] [unzip] Entry: server/server.mjs (compressed_size=276407 bytes, uncompressed_size=933701 bytes)
+[debug] [2025-06-04T04:57:20.045Z] [unzip] Processing entry: server\server.mjs
+[debug] [2025-06-04T04:57:20.045Z] [unzip] else mkdir: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\server
+[debug] [2025-06-04T04:57:20.046Z] [unzip] deflating: C:\Users\pendz\.cache\firebase\emulators\ui-v1.15.0\server\server.mjs
+[info] i  ui: Removing outdated emulator files: ui-v1.14.0 {"metadata":{"emulator":{"name":"ui"},"message":"Removing outdated emulator files: ui-v1.14.0"}}
+[info] i  ui: Removing outdated emulator files: ui-v1.14.0.zip {"metadata":{"emulator":{"name":"ui"},"message":"Removing outdated emulator files: ui-v1.14.0.zip"}}
+[debug] [2025-06-04T04:57:20.065Z] [Extensions] Connecting Extensions emulator, this is a noop.
+[info] i  functions: Watching "C:\Coding\ai-agents\pethavenhub\packages\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Coding\\ai-agents\\pethavenhub\\packages\\functions\" for Cloud Functions..."}}
+[debug] [2025-06-04T04:57:20.069Z] Validating nodejs source
+[debug] [2025-06-04T04:57:20.731Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^5.7.3"
+  },
+  "private": true
+}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: There was an error reading packages\functions\package.json:
+
+ packages\functions\lib\index.js does not exist, can't deploy Cloud Functions {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: There was an error reading packages\\functions\\package.json:\n\n packages\\functions\\lib\\index.js does not exist, can't deploy Cloud Functions"}}
+[debug] [2025-06-04T04:57:20.734Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬──────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI              │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth       │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:9090 │ http://127.0.0.1:4000/firestore  │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Hosting        │ 127.0.0.1:5000 │ n/a                              │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage    │
+├────────────────┼────────────────┼──────────────────────────────────┤
+│ Extensions     │ 127.0.0.1:5001 │ http://127.0.0.1:4000/extensions │
+└────────────────┴────────────────┴──────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500, 9152
+┌─────────────────────────┬───────────────┬─────────────────────┐
+│ Extension Instance Name │ Extension Ref │ View in Emulator UI │
+└─────────────────────────┴───────────────┴─────────────────────┘
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-06-04T04:57:39.653Z] Jun 03, 2025 11:57:39 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 03, 2025 11:57:39 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\r\nINFO: Connected to new websocket client\r\n"}}
+[debug] [2025-06-04T04:57:39.655Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:39.655Z] Checked if tokens are valid: true, expires at: 1749015014186
+[debug] [2025-06-04T04:57:39.655Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev/adminSdkConfig [none]
+[debug] [2025-06-04T04:57:39.804Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev/adminSdkConfig 403
+[debug] [2025-06-04T04:57:39.804Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev/adminSdkConfig {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-06-04T04:57:39.804Z] Failed to get Admin SDK config for pet-haven-hub-dev, falling back to cache Failed to get Admin SDK for Firebase project pet-haven-hub-dev. Please make sure the project exists and your account has permission to access it. {"name":"FirebaseError","children":[],"exit":2,"message":"Failed to get Admin SDK for Firebase project pet-haven-hub-dev. Please make sure the project exists and your account has permission to access it.","original":{"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}},"response":{"statusCode":403}},"exit":1,"message":"Request to https://firebase.googleapis.com/v1beta1/projects/pet-haven-hub-dev/adminSdkConfig had HTTP Error: 403, The caller does not have permission","status":403},"status":500}
+[debug] [2025-06-04T04:57:45.574Z] Jun 03, 2025 11:57:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed
+INFO: Websocket client disconnected
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jun 03, 2025 11:57:45 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler channelClosed\r\nINFO: Websocket client disconnected\r\n"}}

@@ -1,0 +1,33 @@
+{
+  "name": "pethavenhub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "firebase emulators:exec --project pet-haven-hub-dev \"turbo run test\"",
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "deploy": "firebase deploy --only hosting,functions --project pet-haven-hub-dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "npm@10.8.2",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^4.0.1",
+    "@testing-library/react": "^16.3.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.5.0",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "turbo": "^2.5.4",
+    "vitest": "^3.2.1"
+  }
+}

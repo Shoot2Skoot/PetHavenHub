@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "strict": false,
+    "baseUrl": ".",
+    "paths": {
+      "@web/*": ["packages/web/*"],
+      "@functions/*": ["packages/functions/*"]
+    }
+  }
+}
